@@ -49,7 +49,7 @@
 {
     BOOL shouldSelect = previousCount < self.maximumImagesCount;
     if (!shouldSelect) {
-        NSString *title = [NSString stringWithFormat:NSLocalizedString(@"提示")];
+        NSString *title = NSLocalizedString(@"提示");
         NSString *message = [NSString stringWithFormat:NSLocalizedString(@"最多可选择 %d 张照片.", nil), self.maximumImagesCount];
         [[[UIAlertView alloc] initWithTitle:title
                                     message:message
